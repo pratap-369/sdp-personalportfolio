@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratap Kumar Das | Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#2f7f75',
+                        paper: '#f4f2ee',
+                        soft: '#e7ece9'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .heading {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .blob {
+            position: relative;
+            border-radius: 60% 40% 55% 45% / 55% 60% 40% 45%;
+            animation: float 5s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        .blob img {
+            width: 65%;
+            height: 65%;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-paper text-gray-800">
+
+    <!-- NAVBAR -->
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="heading text-2xl text-accent font-bold">My Portfolio</a>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#about" class="text-gray-700 hover:text-accent transition">About Me</a>
+                <a href="#education" class="text-gray-700 hover:text-accent transition">Education</a>
+                <a href="#skills" class="text-gray-700 hover:text-accent transition">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-accent transition">Projects</a>
+                <a href="#strengths" class="text-gray-700 hover:text-accent transition">Strengths</a>
+                <a href="#contact" class="text-gray-700 hover:text-accent transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Background Blob -->
+    <div class="fixed top-[-100px] right-[-200px] w-[500px] h-[500px] bg-soft rounded-full blur-[140px] -z-10"></div>
+
+    <main class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-20">
+
+        <!-- LEFT COLUMN -->
+        <section>
+
+            <!-- Name -->
+            <h1 class="heading text-6xl leading-tight mb-10">
+                Hello, I am
+                <span class="block italic text-accent">Pratap Kumar Das</span>
+            </h1>
+
+            <!-- About Me -->
+            <div id="about" class="border-l-2 border-accent pl-6 mb-14">
+                <h2 class="heading text-2xl mb-4">About Me</h2>
+                <p class="text-sm leading-relaxed">
+                    I am a passionate web developer focused on building modern, responsive and
+                    user-friendly applications. I enjoy solving real-world problems through
+                    clean code and scalable design.
+                </p>
+            </div>
+
+            <!-- Education -->
+            <div id="education" class="border-l-2 border-accent pl-6 mb-14">
+                <h2 class="heading text-2xl mb-5">Education</h2>
+                <div class="space-y-6 text-sm">
+                    <div>
+                        <p class="font-semibold">Master of Computer Applications (MCA)</p>
+                        <p class="italic text-gray-600">Computer Science</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Bachelor’s Degree</p>
+                        <p class="italic text-gray-600">Science Stream</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div id="skills" class="border-l-2 border-accent pl-6 mb-14">
+                <h2 class="heading text-2xl mb-5">Technical Skills</h2>
+                <div class="space-y-4 text-sm">
+                    <div>
+                        <p>HTML</p>
+                        <div class="h-1.5 bg-gray-300 rounded-full">
+                            <div class="h-1.5 bg-gradient-to-r from-accent to-[#6fc3b2] w-[90%] rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>Tailwind CSS</p>
+                        <div class="h-1.5 bg-gray-300 rounded-full">
+                            <div class="h-1.5 bg-gradient-to-r from-accent to-[#6fc3b2] w-[85%] rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>JavaScript</p>
+                        <div class="h-1.5 bg-gray-300 rounded-full">
+                            <div class="h-1.5 bg-gradient-to-r from-accent to-[#6fc3b2] w-[75%] rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>PHP / MySQL</p>
+                        <div class="h-1.5 bg-gray-300 rounded-full">
+                            <div class="h-1.5 bg-gradient-to-r from-accent to-[#6fc3b2] w-[70%] rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Projects -->
+            <div id="projects" class="border-l-2 border-accent pl-6 mb-14">
+                <h2 class="heading text-2xl mb-5">Academic Projects</h2>
+                <div class="space-y-4 text-sm">
+                    <div class="p-4 rounded-xl bg-white/70 shadow hover:bg-white transition">
+                        <p class="font-medium">Vote Counting System</p>
+                        <p class="italic text-gray-600">Implemented using C programming</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-white/70 shadow hover:bg-white transition">
+                        <p class="font-medium">Travel & Tourism Management System</p>
+                        <p class="italic text-gray-600">PHP & MySQL based web application</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-white/70 shadow hover:bg-white transition">
+                        <p class="font-medium">Personal Portfolio Website</p>
+                        <p class="italic text-gray-600">HTML, CSS & Tailwind CSS</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strengths -->
+            <div id="strengths" class="border-l-2 border-accent pl-6 mb-14">
+                <h2 class="heading text-2xl mb-4">Strengths</h2>
+                <ul class="text-sm space-y-2">
+                    <li>✔ Strong problem-solving skills</li>
+                    <li>✔ Clean & structured coding</li>
+                    <li>✔ Quick learner</li>
+                    <li>✔ Team collaboration</li>
+                    <li>✔ Time management</li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div id="contact" class="border-l-2 border-accent pl-6 mb-14">
+                <h2 class="heading text-2xl mb-4">Contact</h2>
+                <ul class="text-sm space-y-2">
+                    <li>📧 pk0062728@gmail.com</li>
+                    <li>📞 +91 XXXXXXXXXX</li>
+                    <li>📍 India</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- RIGHT COLUMN -->
+        <section>
+            <div class="relative flex flex-col items-center mt-16">
+                <!-- BIGGER Blob WITH profile inside -->
+                <div class="blob w-[400px] h-[400px] bg-accent mb-16">
+                    <img src="image.jpeg" alt="Profile">
+                </div>
+
+                <!-- Software Quote BELOW the blob -->
+                <p
+                    class="mt-8 text-center text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-accent via-[#6fc3b2] to-[#090502]">
+                    "Code is like humor. When you have to explain it, it’s bad." – Cory House
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-accent text-white py-8 mt-20">
+        <div class="max-w-6xl mx-auto px-6 text-center space-y-2">
+            <p>© 2025 Pratap Kumar Das</p>
+            <p>Designed & Built by Me | <a href="mailto:pk0062728@gmail.com" class="underline">Contact Me</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
